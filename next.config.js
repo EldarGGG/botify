@@ -2,11 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',
-  images: {
-    unoptimized: true
-  },
-  basePath: '/botify'
+  output: 'standalone',
+  env: {
+    NEXT_PUBLIC_BASE_URL: 'https://botify-server.kz'
+  }
 }
 
 module.exports = nextConfig
